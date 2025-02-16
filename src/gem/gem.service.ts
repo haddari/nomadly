@@ -5,7 +5,7 @@ import { lastValueFrom } from 'rxjs';
 
 @Injectable()
 export class GemService {
-  private readonly apiKey: string = 'AIzaSyAF8BIDiyO4lsLEVofbfYZkGSyULQjfkfA'; // Remplacez par votre clé API
+  private readonly apiKey: string = ''; // Remplacez par votre clé API
   private readonly apiUrl: string = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent'; // URL de base de l'API Gemini
 
   constructor(private readonly httpService: HttpService) {}

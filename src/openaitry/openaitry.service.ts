@@ -13,7 +13,7 @@ export class OpenaitryService {
     private readonly SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes
 
     constructor() {
-      this.genAI = new GoogleGenerativeAI("add your API KEY ");
+      this.genAI = new GoogleGenerativeAI(process.env.API_OPEN_AI_KEY);
     }
 
     private cleanupOldSessions() {
